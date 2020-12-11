@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  icecodereditor:
+    build: .
+    privileged: true
+    ports:
+      - "8080:8080"
+    volumes:
+      - ".:/tmp/editor:rw"
